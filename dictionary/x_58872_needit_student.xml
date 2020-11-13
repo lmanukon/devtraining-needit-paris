@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Student" max_length="40" name="x_58872_needit_student" sizeclass="6" type="collection">
+        <element label="Class" max_length="50" name="class" type="string"/>
+        <element label="Course Name" max_length="50" name="course_name" type="string"/>
+        <element label="DOJ" mandatory="true" max_length="10" name="doj" type="glide_date"/>
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="studentID" max_length="10" name="studentid" type="string"/>
+        <element label="Student Name" max_length="50" name="student_name" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="studentid"/>
+        </index>
+        <index name="index2">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
